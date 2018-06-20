@@ -1,0 +1,98 @@
+//
+//  WisdomSiteSuiNing.pch
+//  WisdomSiteSuiNing
+//
+//  Created by 董亚杰 on 2018/6/20.
+//  Copyright © 2018年 dyj. All rights reserved.
+//
+
+#ifndef WisdomSiteSuiNing_pch
+#define WisdomSiteSuiNing_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* WisdomSiteSuiNing_pch */
+
+
+#import <AFNetworking.h>
+#import <UIButton+WebCache.h>
+#import <UIImageView+WebCache.h>
+#import <SRWebSocket.h>
+#import <BaiduMapAPI_Base/BMKBaseComponent.h>//引入base相关所有的头文件
+#import <BaiduMapAPI_Map/BMKMapComponent.h>//引入地图功能所有的头文件
+#import <BaiduMapAPI_Search/BMKSearchComponent.h>//引入检索功能所有的头文件
+#import <BaiduMapAPI_Cloud/BMKCloudSearchComponent.h>//引入云检索功能所有的头文件
+#import <BaiduMapAPI_Location/BMKLocationComponent.h>//引入定位功能所有的头文件
+#import <BaiduMapAPI_Utils/BMKUtilsComponent.h>//引入计算工具所有的头文件
+#import <BaiduMapAPI_Radar/BMKRadarComponent.h>//引入周边雷达功能所有的头文件
+#import <BaiduMapAPI_Map/BMKMapView.h>//只引入所需的单个头文件
+
+#import "NetWorkTool.h"
+#import "UserModel.h"
+#import "UserAuthModel.h"
+#import "DTApiBaseBean.h"
+#import "CustomString.h"
+#import "FMUImage.h"
+#import "ZHUtil.h"
+#import "NSArray+CustomFoundation.h"
+#import "UIView+CustomFoundation.h"
+#import <MBProgressHUD.h>
+#import "MBProgressHUD+YJ.h"
+#import <Masonry.h>
+#import "NSString+Phone.h"
+
+#import <MJRefresh.h>
+#import "QBImagePickerController.h"
+
+
+#import "BaseViewController.h"
+
+#define KPhotoShopNum   @"自定义相册"
+#define loginSucess     @"loginSucess"//登录成功的通知
+
+
+#pragma mark - 设备判断
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136),[[UIScreen mainScreen] currentMode].size) : NO)
+
+#define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(750, 1334), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+#define iPhone6plus ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? (CGSizeEqualToSize(CGSizeMake(1125, 2001), [[UIScreen mainScreen] currentMode].size) || CGSizeEqualToSize(CGSizeMake(1242, 2208), [[UIScreen mainScreen] currentMode].size)) : NO)
+
+#define iPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
+
+//iOS版本号
+#define IOS7_OR_LATER   ([[UIDevice currentDevice] systemVersion].floatValue >= 7.0)//( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+
+
+//屏幕宽高
+#define ScreenWidth  [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+//根据屏幕计算宽高
+#define HeightBy375(h)  (h) * ScreenWidth / 375.0
+#define WidthBy375(w)   (w) * ScreenWidth / 375.0
+
+//iphoneX  安全距离
+#define SafeAreaBottomHeight (ScreenHeight == 812.0 ? 34 : 0)
+#define SafeAreaTopHeight (ScreenHeight == 812.0 ? 88 : 64)
+#define StatusHeight (ScreenHeight == 812.0 ? 44 : 20)
+#define NavigationBarHeight   SafeAreaTopHeight
+
+
+#pragma mark 颜色相关++颜色相关++颜色相关++颜色相关
+// rgb颜色转换（16进制->10进制）
+#define UIColorFromRBGString(rgbValue)  [ZHUtil colorWithHexString:rgbValue]
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+// 获取RGB颜色
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+
+
+
+//设计稿为6的尺寸（6之前上面－1，6不变，6P上面＋1）
+#define kTFStandardFontBy375(fontsize) ((iPhone6plus) ? (fontsize+1) : ((iPhone5) ? (fontsize-1) : ((iPhone6 || iPhoneX) ? (fontsize) : (fontsize-1))))
+#define kTFStandardFontBy375_value(fontsize,value) ((iPhone6plus) ? (fontsize+1) : ((iPhone5) ? (fontsize-value) : ((iPhone6 || iPhoneX) ? (fontsize) : (fontsize-value))))
+
+
+
