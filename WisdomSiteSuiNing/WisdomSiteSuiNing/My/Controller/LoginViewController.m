@@ -1,20 +1,18 @@
-
-
 //
 //  LoginViewController.m
 //  WisdomSiteSuiNing
 //
-//  Created by 董亚杰 on 2018/6/20.
+//  Created by 董亚杰 on 2018/6/21.
 //  Copyright © 2018年 dyj. All rights reserved.
 //
 
 #import "LoginViewController.h"
 
-
 @interface LoginViewController ()<UITextFieldDelegate,UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userTextField;
 @property (weak, nonatomic) IBOutlet UITextField *pswTextField;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
+
 
 @end
 
@@ -23,7 +21,6 @@
 -(void)dealloc{
     [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
-
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -67,7 +64,7 @@
 - (IBAction)buttonAction:(UIButton *)sender {
     
     if ([self.userTextField.text isEqualToString:@"sys"]&&[self.pswTextField.text isEqualToString:@"123"]) {
-         [MBProgressHUD showMessage:@"登录成功"];
+        [MBProgressHUD showMessage:@"登录成功"];
         
         NSUserDefaults *user_d = [NSUserDefaults standardUserDefaults];
         [user_d setObject:self.userTextField.text forKey:@"name"];
@@ -82,6 +79,7 @@
         }
     }
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
