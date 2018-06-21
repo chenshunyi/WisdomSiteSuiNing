@@ -29,7 +29,7 @@
         self.window.rootViewController=vc;
     }else{//登录页面
         LoginViewController*loginVC=[[LoginViewController alloc]init];
-        loginVC.hidesBottomBarWhenPushed=YES;
+//        loginVC.hidesBottomBarWhenPushed=YES;
         __weak typeof(self)this =self;
         [loginVC setLoginBackBlock:^(BOOL isSucess) {
             TabBarViewController*vc=[[TabBarViewController alloc]init];

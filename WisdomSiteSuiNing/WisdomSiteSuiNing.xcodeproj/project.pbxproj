@@ -99,8 +99,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5F15ACF78EF6D0E323ED6374 /* Pods-WisdomSiteSuiNing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomSiteSuiNing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WisdomSiteSuiNing/Pods-WisdomSiteSuiNing.debug.xcconfig"; sourceTree = "<group>"; };
-		63DC95DA14D626FFD78C48FC /* Pods-WisdomSiteSuiNing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomSiteSuiNing.release.xcconfig"; path = "Pods/Target Support Files/Pods-WisdomSiteSuiNing/Pods-WisdomSiteSuiNing.release.xcconfig"; sourceTree = "<group>"; };
 		728B607920D9F79C0047B7DE /* WisdomSiteSuiNing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WisdomSiteSuiNing.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		728B607C20D9F79C0047B7DE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		728B607D20D9F79C0047B7DE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -216,6 +214,8 @@
 		728B617C20DA50C00047B7DE /* login_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_user.png; sourceTree = "<group>"; };
 		728B617D20DA50C00047B7DE /* login_pwd.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_pwd.png; sourceTree = "<group>"; };
 		BCC3689680F4B1D525659662 /* libPods-WisdomSiteSuiNing.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WisdomSiteSuiNing.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4BB140B4EB74D20C9303325 /* Pods-WisdomSiteSuiNing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomSiteSuiNing.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WisdomSiteSuiNing/Pods-WisdomSiteSuiNing.debug.xcconfig"; sourceTree = "<group>"; };
+		F0AC8ABF40DEA5A61FB0A6EF /* Pods-WisdomSiteSuiNing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WisdomSiteSuiNing.release.xcconfig"; path = "Pods/Target Support Files/Pods-WisdomSiteSuiNing/Pods-WisdomSiteSuiNing.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,8 +247,8 @@
 		3224DB7F12C2688558EEF82A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5F15ACF78EF6D0E323ED6374 /* Pods-WisdomSiteSuiNing.debug.xcconfig */,
-				63DC95DA14D626FFD78C48FC /* Pods-WisdomSiteSuiNing.release.xcconfig */,
+				D4BB140B4EB74D20C9303325 /* Pods-WisdomSiteSuiNing.debug.xcconfig */,
+				F0AC8ABF40DEA5A61FB0A6EF /* Pods-WisdomSiteSuiNing.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -554,7 +554,7 @@
 				728B607520D9F79C0047B7DE /* Sources */,
 				728B607620D9F79C0047B7DE /* Frameworks */,
 				728B607720D9F79C0047B7DE /* Resources */,
-				EFBE3E312CF8681808B942D4 /* [CP] Copy Pods Resources */,
+				A751769CE6333FEA6873CA81 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -721,7 +721,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EFBE3E312CF8681808B942D4 /* [CP] Copy Pods Resources */ = {
+		A751769CE6333FEA6873CA81 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -956,7 +956,7 @@
 		};
 		728B60A620D9F7A00047B7DE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5F15ACF78EF6D0E323ED6374 /* Pods-WisdomSiteSuiNing.debug.xcconfig */;
+			baseConfigurationReference = D4BB140B4EB74D20C9303325 /* Pods-WisdomSiteSuiNing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -966,10 +966,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WisdomSiteSuiNing/WisdomSiteSuiNing.pch";
 				INFOPLIST_FILE = WisdomSiteSuiNing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.njzckj.WisdomSiteSuiNing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -979,7 +976,7 @@
 		};
 		728B60A720D9F7A00047B7DE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 63DC95DA14D626FFD78C48FC /* Pods-WisdomSiteSuiNing.release.xcconfig */;
+			baseConfigurationReference = F0AC8ABF40DEA5A61FB0A6EF /* Pods-WisdomSiteSuiNing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -989,10 +986,7 @@
 				GCC_PREFIX_HEADER = "$(SRCROOT)/WisdomSiteSuiNing/WisdomSiteSuiNing.pch";
 				INFOPLIST_FILE = WisdomSiteSuiNing/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.njzckj.WisdomSiteSuiNing;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1007,11 +1001,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3UHNVFMNV;
 				INFOPLIST_FILE = WisdomSiteSuiNingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.njzckj.WisdomSiteSuiNingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1026,11 +1016,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3UHNVFMNV;
 				INFOPLIST_FILE = WisdomSiteSuiNingTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.njzckj.WisdomSiteSuiNingTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1044,11 +1030,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3UHNVFMNV;
 				INFOPLIST_FILE = WisdomSiteSuiNingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.njzckj.WisdomSiteSuiNingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1062,11 +1044,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3UHNVFMNV;
 				INFOPLIST_FILE = WisdomSiteSuiNingUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.njzckj.WisdomSiteSuiNingUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

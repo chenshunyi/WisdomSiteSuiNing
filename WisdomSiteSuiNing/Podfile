@@ -2,23 +2,27 @@ platform :ios, '8.0'
 target ‘WisdomSiteSuiNing’ do
 
 #加载网络图片第三方
-pod 'SDWebImage', '~> 4.3.3'
-
+pod 'SDWebImage', '~> 4.0.0-beta2'
 #网络请求库
-pod 'AFNetworking', '~> 3.2.1'
+pod 'AFNetworking', '~> 3.1.0'
 #下拉刷新
-pod 'MJRefresh', '~> 3.1.15.3'
-
+pod 'MJRefresh', '~> 3.1.12'
 #提示框
-pod 'MBProgressHUD', '~> 1.1.0'
+pod 'MBProgressHUD', '~> 1.0.0'
+#代码适配的第三方
+pod 'Masonry', '~> 1.0.2'
+#极光推送
+pod 'JPush', '~> 2.2.0'
+
+pod 'SocketRocket', '~> 0.5.1'
 #百度地图第三方
 pod 'BaiduMap-iOS-SDK', '~> 3.0'
+
+#U盟
+pod 'UMengAnalytics', '~> 4.1.2'
 #二维码扫描
 pod 'ZBarSDK', '~> 1.3.1'
 
-pod 'SocketRocket', '~> 0.5.1'
-#代码适配的第三方
-pod 'Masonry', '~> 1.1.0'
 end
 
 

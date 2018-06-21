@@ -14,7 +14,7 @@
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2011-2016 Alamofire Software Foundation (http://alamofire.org/)
+			<string>Copyright (c) 2011–2016 Alamofire Software Foundation (http://alamofire.org/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -38,6 +38,16 @@ THE SOFTWARE.
 			<string>MIT</string>
 			<key>Title</key>
 			<string>AFNetworking</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright jpush.cn</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>JPush</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
@@ -128,7 +138,7 @@ THE SOFTWARE.</string>
 		</dict>
 		<dict>
 			<key>FooterText</key>
-			<string>Copyright (c) 2009-2017 Olivier Poitrey rs@dailymotion.com
+			<string>Copyright (c) 2016 Olivier Poitrey rs@dailymotion.com
  
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -178,6 +188,17 @@ THE SOFTWARE.
 			<string>Apache License, Version 2.0</string>
 			<key>Title</key>
 			<string>SocketRocket</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Copyright 2011 - 2015 UMeng.com. All rights reserved.
+</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
+			<string>UMengAnalytics</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 		</dict>
