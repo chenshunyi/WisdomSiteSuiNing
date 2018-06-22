@@ -47,7 +47,7 @@
             [button setAdjustsImageWhenHighlighted:NO];//去掉button的点击效果
             button.frame = CGRectMake(ScreenWidth*i, 0, ScreenWidth, PICHEIGHT);
             button.tag = i;
-            [button setImage:[UIImage imageNamed:[picArr objectAtIndex:i]] forState:UIControlStateNormal];
+            [button setImage:[UIImage imageNamed:[picArr objectAtSafeIndex:i]] forState:UIControlStateNormal];
             [button addTarget:self action:@selector(buttonAction:) forControlEvents:UIControlEventTouchUpInside];
             [self.scrollView addSubview:button];
         }
