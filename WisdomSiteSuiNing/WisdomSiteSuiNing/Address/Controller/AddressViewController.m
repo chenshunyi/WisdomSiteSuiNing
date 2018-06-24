@@ -9,15 +9,16 @@
 
 #import "AddressViewController.h"
 #import "AddrDetailTableViewCell.h"
+#import "AddressHeaderFooterView.h"
 
 @interface AddressViewController ()<UITableViewDataSource,UITableViewDelegate>{
     NSArray     *_array;
     NSDictionary*_data;
+    BOOL _isOpen[50];
+    
 }
 @property(nonatomic,strong) IBOutlet UITableView *tableView;
-@property(nonatomic,strong)NSArray*nameArr;//项目经理等等
-
-@property (nonatomic, assign, getter=isFolded) BOOL folded;
+@property(nonatomic,strong) NSArray*nameArr;//项目经理等等
 
 
 @end
@@ -33,17 +34,11 @@
     self.tableView.dataSource=self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
-    self.folded=YES;
-
     
     self.nameArr=@[@{@"title":@"技术部",@"datas":@[@{@"name":@"张三",@"phone":@"1234566"},@{@"name":@"范冰冰",@"phone":@"1234566"},@{@"name":@"李晨",@"phone":@"1234566"}]},
                     @{@"title":@"项目经理",@"datas":@[@{@"name":@"张四",@"phone":@"1234566"},@{@"name":@"范冰冰",@"phone":@"1234566"},@{@"name":@"李晨",@"phone":@"1234566"}]},
                     @{@"title":@"后期部",@"datas":@[@{@"name":@"张五",@"phone":@"1234566"},@{@"name":@"范冰冰",@"phone":@"1234566"},@{@"name":@"李晨",@"phone":@"1234566"}]}
                     ];
-    for (int i=0; i<self.nameArr.count; i++) {
-        _data=[self.nameArr objectAtSafeIndex:i];
-        _array=[_data objectForKey:@"name"];
-    }
     
 }
 
@@ -52,7 +47,13 @@
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return _array.count;
+    NSDictionary *data=[self.nameArr objectAtSafeIndex:section];
+    NSArray *datas = [data objectForKey:@"datas"];
+    if (_isOpen[section]) {
+        return datas.count;
+    }else{
+        return 0;
+    }
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     
@@ -82,24 +83,27 @@
 #pragma mark UITableViewDelegate回调方法
 //对hearderView进行编辑
 -(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView*nameView=[[UIView alloc]init];
-     //将分组的名字nameLabel添加到nameview上
-    UILabel*nameLabel=[[UILabel alloc]initWithFrame:CGRectMake(40, 0, self.view.frame.size.width, 40)];
-    [nameView addSubview:nameLabel];
-    nameView.layer.borderWidth=0.2;
-    nameView.layer.borderColor=[UIColor grayColor].CGColor;
-    nameLabel.text=[_data objectForKey:@"title"];
-    //添加一个button用于响应点击事件（展开还是收起）
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    button.frame=CGRectMake(0, 0, self.view.frame.size.width, 40);
-    [nameView addSubview:button];
-    button.tag = 200 + section;
-    [button addTarget:self action:@selector(buttonClicked:) forControlEvents:UIControlEventTouchUpInside];
-    //将显示展开还是收起的状态通过三角符号显示出来
-    UIImageView *fuhao=[[UIImageView alloc]initWithFrame:CGRectMake(10, 10, 20, 20)];
-    fuhao.tag=section;
-    [nameView addSubview:fuhao];
-    return nameView;
+    
+    AddressHeaderFooterView *view = [[NSBundle mainBundle]loadNibNamed:@"AddressHeaderFooterView" owner:nil options:nil].firstObject;
+    if (!view) {
+        view = [[NSBundle mainBundle]loadNibNamed:@"AddressHeaderFooterView" owner:nil options:nil].firstObject;
+//        view.reuseIdentifier = @"AddressHeaderFooterView";
+    }
+    __weak typeof(self) this = self;
+    [view setUnfolderButtonClickBlock:^(NSInteger section) {
+        self->_isOpen[section] = !self->_isOpen[section];
+        //NSIndexSet 索引集合
+        NSIndexSet *indexSet =[NSIndexSet indexSetWithIndex:section];
+        //刷新区
+        [this.tableView reloadSections:indexSet withRowAnimation:UITableViewRowAnimationAutomatic];
+    }];
+    
+    NSDictionary *data = [_nameArr objectAtSafeIndex:section];
+    [view reloadHeaderFooterView:data withUnfolder:_isOpen[section] withSection:section];
+    
+
+    return view;
+    
 }
 //设置headerView高度
 - (CGFloat) tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {

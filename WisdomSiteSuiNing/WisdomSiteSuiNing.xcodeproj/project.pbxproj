@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F04F34E20DFE076004B44AA /* AddressHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F04F34D20DFE076004B44AA /* AddressHeaderFooterView.m */; };
+		2F04F35020DFE07F004B44AA /* AddressHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F04F34F20DFE07F004B44AA /* AddressHeaderFooterView.xib */; };
 		721A4FEE20DB3CF200194970 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 721A4FEC20DB3CF200194970 /* LoginViewController.m */; };
 		721A4FEF20DB3CF200194970 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 721A4FED20DB3CF200194970 /* LoginViewController.xib */; };
 		721A4FF420DB49A000194970 /* MainBannerTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 721A4FF220DB49A000194970 /* MainBannerTableViewCell.m */; };
@@ -142,6 +144,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2F04F34C20DFE076004B44AA /* AddressHeaderFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddressHeaderFooterView.h; sourceTree = "<group>"; };
+		2F04F34D20DFE076004B44AA /* AddressHeaderFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressHeaderFooterView.m; sourceTree = "<group>"; };
+		2F04F34F20DFE07F004B44AA /* AddressHeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressHeaderFooterView.xib; sourceTree = "<group>"; };
 		721A4FEB20DB3CF200194970 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		721A4FEC20DB3CF200194970 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		721A4FED20DB3CF200194970 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
@@ -408,6 +413,9 @@
 				726A539F20DC9456005C205F /* AddrDetailTableViewCell.h */,
 				726A53A020DC9456005C205F /* AddrDetailTableViewCell.m */,
 				726A539E20DC9456005C205F /* AddrDetailTableViewCell.xib */,
+				2F04F34C20DFE076004B44AA /* AddressHeaderFooterView.h */,
+				2F04F34D20DFE076004B44AA /* AddressHeaderFooterView.m */,
+				2F04F34F20DFE07F004B44AA /* AddressHeaderFooterView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -881,6 +889,7 @@
 				721A4FFC20DB6F3800194970 /* banner_1.jpg in Resources */,
 				721A502520DB9FD200194970 /* work_audit_inner.png in Resources */,
 				728B616C20DA38CF0047B7DE /* self_press@2x.png in Resources */,
+				2F04F35020DFE07F004B44AA /* AddressHeaderFooterView.xib in Resources */,
 				721A500E20DB906500194970 /* progressBg.jpg in Resources */,
 				721A501220DB95EC00194970 /* ThreeTableViewCell.xib in Resources */,
 				726A53CD20DCDC24005C205F /* InformationTableViewCell.xib in Resources */,
@@ -1046,6 +1055,7 @@
 				728B610F20DA1E750047B7DE /* NSString+Phone.m in Sources */,
 				728B607E20D9F79C0047B7DE /* AppDelegate.m in Sources */,
 				728B60E820DA1DE00047B7DE /* QBImagePickerAssetCell.m in Sources */,
+				2F04F34E20DFE076004B44AA /* AddressHeaderFooterView.m in Sources */,
 				728B60EA20DA1DE00047B7DE /* QBImagePickerController.m in Sources */,
 				721A501320DB95EC00194970 /* ThreeTableViewCell.m in Sources */,
 				726A53A720DCBF39005C205F /* PersonTableViewCell.m in Sources */,
