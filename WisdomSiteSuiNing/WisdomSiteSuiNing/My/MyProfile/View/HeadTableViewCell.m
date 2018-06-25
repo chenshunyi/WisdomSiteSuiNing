@@ -21,14 +21,22 @@
     [super awakeFromNib];
     // Initialization code
 }
--(void)reloadCelldata:(id)data{
+-(void)reloadCelldata:(id)data Withimage:(UIImage*)image{
     self.headButton.layer.cornerRadius=50;
     self.headButton.layer.masksToBounds = YES;//是否裁剪边缘部分
     
 //    NSString *avatarStr = [CustomString isNotEmptyString:avatarUrl]?avatarUrl:@"";
 //    [self.headButton sd_setImageWithURL:[NSURL URLWithString:avatarStr] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"my_photo.png"]];
     
-    [self.headButton setImage:[UIImage imageNamed:@"my_photo.png"] forState:UIControlStateNormal];
+//    NSString *avatarStr = [CustomString isNotEmptyString:avatarUrl]?avatarUrl:@"";
+//    [self.headButton sd_setImageWithURL:[NSURL URLWithString:avatarStr] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"my_photo.png"]];
+ 
+    if (!image) {
+         [self.headButton setImage:[UIImage imageNamed:@"my_photo.png"] forState:UIControlStateNormal];
+        
+    }else{
+       [self.headButton setImage:image forState:UIControlStateNormal];
+    }
 }
 
 //更换头像

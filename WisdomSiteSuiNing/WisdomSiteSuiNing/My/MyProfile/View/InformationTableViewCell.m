@@ -34,17 +34,17 @@
     switch ([[_dic objectForKey:@"type"] integerValue]) {
         case 0:{
             title=@"请输入姓名";
-            self.typeField.userInteractionEnabled = NO;
+//            self.typeField.userInteractionEnabled = NO;
         }
             break;
         case 1:{
             title=@"请输入性别男/女";
-            self.typeField.userInteractionEnabled = NO;
+//            self.typeField.userInteractionEnabled = NO;
         }
             break;
         case 2:{
             title=@"请输入年龄";
-            self.typeField.userInteractionEnabled = NO;
+//            self.typeField.userInteractionEnabled = NO;
         }
             break;
         case 3:{
@@ -53,7 +53,7 @@
             break;
         case 4:{
             title=@"请输入身份证号";
-            self.typeField.userInteractionEnabled = NO;
+//            self.typeField.userInteractionEnabled = NO;
         }
             break;
         case 5:{
@@ -79,6 +79,8 @@
     }
     
 }
+
+
 
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

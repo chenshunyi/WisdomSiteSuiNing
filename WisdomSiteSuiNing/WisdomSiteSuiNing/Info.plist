@@ -41,5 +41,30 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+		<key>NSExceptionDomains</key>
+		<dict>
+			<key>alipay.com</key>
+			<dict>
+				<key>NSIncludesSubdomains</key>
+				<true/>
+				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+				<true/>
+				<key>NSTemporaryExceptionMinimumTLSVersion</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>用于添加图片到相册，图片上传，图片保存等服务</string>
+	<key>NSCameraUsageDescription</key>
+	<string>以便您正常使用拍照等服务</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>用于添加图片到相册，图片上传，图片保存等服务</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>用于添加图片到相册，图片上传，图片保存等服务</string>
 </dict>
 </plist>

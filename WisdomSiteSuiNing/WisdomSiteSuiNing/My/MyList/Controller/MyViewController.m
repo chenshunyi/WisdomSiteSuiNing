@@ -10,6 +10,8 @@
 #import "PersonTableViewCell.h"
 #import "CategoryTableViewCell.h"
 #import "MyProfileViewController.h"
+#import "IntroduceViewController.h"
+#import "LoginViewController.h"
 
 @interface MyViewController ()<UITableViewDelegate,UITableViewDataSource>{
     
@@ -113,7 +115,9 @@
             case 2:{
                 switch ([[dic objectForKey:@"type"] integerValue]) {
                     case 10:{//系统介绍
-                        
+                        IntroduceViewController*introduceVC=[[IntroduceViewController alloc]init];
+                        introduceVC.hidesBottomBarWhenPushed=YES;
+                        [self.navigationController pushViewController:introduceVC animated:YES];
                     }
                         break;
                         
@@ -126,7 +130,23 @@
             case 3:{
                 switch ([[dic objectForKey:@"type"] integerValue]) {
                     case 0:{//退出登录
-                        
+                        UIAlertController*alertController=[UIAlertController alertControllerWithTitle:@"提示" message:@"退出登录" preferredStyle:UIAlertControllerStyleAlert];//提示视图在中央
+                        UIAlertAction*cancelAction=[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+                       UIAlertAction*okAction=[UIAlertAction actionWithTitle:@"确认" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+                            NSUserDefaults*defatluts=[NSUserDefaults standardUserDefaults];
+                            //移除NSUserDefaults中所有的数据
+                            NSDictionary*dictionary=[defatluts dictionaryRepresentation];
+                            for (NSString*key in [dictionary allKeys]) {
+                                [defatluts removeObjectForKey:key];
+                                [defatluts synchronize];
+                            }
+                            LoginViewController*loginVC=[[LoginViewController alloc]init];
+                            loginVC.hidesBottomBarWhenPushed=YES;
+                            [self.navigationController pushViewController:loginVC animated:YES];
+                        }];
+                        [alertController addAction:cancelAction];
+                        [alertController addAction:okAction];
+                        [self presentViewController:alertController animated:YES completion:nil];
                     }
                         break;
                         

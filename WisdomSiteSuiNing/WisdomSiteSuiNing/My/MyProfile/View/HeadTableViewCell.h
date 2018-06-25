@@ -13,6 +13,6 @@
 
 @property (nonatomic, copy) void(^changeHeadImageBlock)(NSInteger tag);
 
--(void)reloadCelldata:(id)data;
+-(void)reloadCelldata:(id)data Withimage:(UIImage*)image;
 
 @end

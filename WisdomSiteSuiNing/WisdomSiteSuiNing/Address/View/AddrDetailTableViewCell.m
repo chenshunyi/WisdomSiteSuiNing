@@ -24,13 +24,12 @@
     // Initialization code
 }
 
--(void)reloadCellData:(id)cellData withHeadImageUrl:(NSString *)imageUrl{
-    
+-(void)reloadCellWithName:(NSString*)nameStr WithPhone:(NSString*)phoneStr withHeadImageUrl:(NSString *)imageUrl{
 //    [self.headImageView sd_setImageWithURL:[NSURL URLWithString:_model.avatar] placeholderImage:[UIImage imageNamed:@"default.jpg"]];
-    self.headImageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"default.jpg"]];
+    self.nameLabel.text=nameStr;
+    self.phoneLabel.text=phoneStr;
     
-//    self.nameLabel.text=[NSString stringWithFormat:@"%@",_model.tit];
-//    self.phoneLabel.text=[NSString stringWithFormat:@"%@",_model.phone];
+    self.headImageView=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"default.jpg"]];
     
     
 }

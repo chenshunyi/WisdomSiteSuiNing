@@ -51,6 +51,14 @@
 #define KPhotoShopNum   @"自定义相册"
 #define loginSucess     @"loginSucess"//登录成功的通知
 
+#define JiangBeiSwich    //注销后是原系统    解注是江北系统
+
+#ifdef   JiangBeiSwich
+#define isJiangBei   1  //0:原系统    1:江北系统
+#else
+#define isJiangBei   0  //0:原系统    1:江北系统
+#endif
+
 
 #pragma mark - 设备判断
 #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136),[[UIScreen mainScreen] currentMode].size) : NO)

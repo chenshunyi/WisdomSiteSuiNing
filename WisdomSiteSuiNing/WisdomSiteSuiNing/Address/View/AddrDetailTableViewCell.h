@@ -10,7 +10,7 @@
 
 @interface AddrDetailTableViewCell : UITableViewCell
 
--(void)reloadCellData:(id)cellData withHeadImageUrl:(NSString *)imageUrl;
+-(void)reloadCellWithName:(NSString*)nameStr WithPhone:(NSString*)phoneStr withHeadImageUrl:(NSString *)imageUrl;
 
 
 @end

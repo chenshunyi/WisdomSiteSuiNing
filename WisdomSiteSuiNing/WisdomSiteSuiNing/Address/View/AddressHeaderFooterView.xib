@@ -18,13 +18,12 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uhY-RT-BgP">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
-                    <state key="normal" title="Button"/>
                     <connections>
                         <action selector="buttonActions:" destination="iN0-l3-epB" eventType="touchUpInside" id="njO-cF-Kye"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zGs-HM-R1t">
-                    <rect key="frame" x="52" y="-0.5" width="311" height="40"/>
+                    <rect key="frame" x="32" y="-0.5" width="331" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="yAR-89-hiu"/>
                     </constraints>
@@ -32,11 +31,11 @@
                     <color key="textColor" red="0.14117647058823529" green="0.14117647058823529" blue="0.14117647058823529" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AcA-ez-M4X">
-                    <rect key="frame" x="12" y="4" width="30" height="30"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="AcA-ez-M4X">
+                    <rect key="frame" x="12" y="9" width="10" height="20"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="30" id="mTx-cJ-1qU"/>
-                        <constraint firstAttribute="height" constant="30" id="pqJ-44-Jbt"/>
+                        <constraint firstAttribute="width" constant="10" id="mTx-cJ-1qU"/>
+                        <constraint firstAttribute="height" constant="20" id="pqJ-44-Jbt"/>
                     </constraints>
                 </imageView>
             </subviews>
@@ -61,4 +60,7 @@
             <point key="canvasLocation" x="33.5" y="369"/>
         </view>
     </objects>
+    <resources>
+        <image name="arrow.png" width="15" height="40"/>
+    </resources>
 </document>

@@ -36,6 +36,20 @@
 		721A502720DB9FE200194970 /* work_progress_check.png in Resources */ = {isa = PBXBuildFile; fileRef = 721A502620DB9FE200194970 /* work_progress_check.png */; };
 		721A502920DB9FF700194970 /* problem.png in Resources */ = {isa = PBXBuildFile; fileRef = 721A502820DB9FF700194970 /* problem.png */; };
 		721A502B20DBA00E00194970 /* money_bag@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 721A502A20DBA00E00194970 /* money_bag@2x.jpg */; };
+		722456B620E07FC00096D1A2 /* default.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 722456B520E07FC00096D1A2 /* default.jpg */; };
+		722456C220E0C27F0096D1A2 /* IntroduceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722456C020E0C27F0096D1A2 /* IntroduceViewController.m */; };
+		722456C320E0C27F0096D1A2 /* IntroduceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 722456C120E0C27F0096D1A2 /* IntroduceViewController.xib */; };
+		722456CB20E0D7880096D1A2 /* QualityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 722456C920E0D7880096D1A2 /* QualityListViewController.m */; };
+		722456CC20E0D7880096D1A2 /* QualityListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 722456CA20E0D7880096D1A2 /* QualityListViewController.xib */; };
+		722456CE20E0E1D30096D1A2 /* add_img@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 722456CD20E0E1D30096D1A2 /* add_img@3x.png */; };
+		722456D320E0E3B50096D1A2 /* QualityListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 722456D120E0E3B50096D1A2 /* QualityListCell.m */; };
+		722456D420E0E3B50096D1A2 /* QualityListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 722456D220E0E3B50096D1A2 /* QualityListCell.xib */; };
+		722456DE20E0E4290096D1A2 /* aid_userModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 722456D720E0E4290096D1A2 /* aid_userModel.m */; };
+		722456DF20E0E4290096D1A2 /* fid_user.m in Sources */ = {isa = PBXBuildFile; fileRef = 722456D920E0E4290096D1A2 /* fid_user.m */; };
+		722456E020E0E4290096D1A2 /* QualityListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 722456DB20E0E4290096D1A2 /* QualityListModel.m */; };
+		722456E120E0E4290096D1A2 /* zid_userModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 722456DD20E0E4290096D1A2 /* zid_userModel.m */; };
+		722456E320E0F2BB0096D1A2 /* left.png in Resources */ = {isa = PBXBuildFile; fileRef = 722456E220E0F2BB0096D1A2 /* left.png */; };
+		722456E520E0F2D90096D1A2 /* bottom.png in Resources */ = {isa = PBXBuildFile; fileRef = 722456E420E0F2D90096D1A2 /* bottom.png */; };
 		726A53A120DC9456005C205F /* AddrDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 726A539E20DC9456005C205F /* AddrDetailTableViewCell.xib */; };
 		726A53A220DC9456005C205F /* AddrDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 726A53A020DC9456005C205F /* AddrDetailTableViewCell.m */; };
 		726A53A720DCBF39005C205F /* PersonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 726A53A520DCBF39005C205F /* PersonTableViewCell.m */; };
@@ -179,6 +193,28 @@
 		721A502620DB9FE200194970 /* work_progress_check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = work_progress_check.png; sourceTree = "<group>"; };
 		721A502820DB9FF700194970 /* problem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = problem.png; sourceTree = "<group>"; };
 		721A502A20DBA00E00194970 /* money_bag@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "money_bag@2x.jpg"; sourceTree = "<group>"; };
+		722456B520E07FC00096D1A2 /* default.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = default.jpg; sourceTree = "<group>"; };
+		722456BF20E0C27F0096D1A2 /* IntroduceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroduceViewController.h; sourceTree = "<group>"; };
+		722456C020E0C27F0096D1A2 /* IntroduceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroduceViewController.m; sourceTree = "<group>"; };
+		722456C120E0C27F0096D1A2 /* IntroduceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroduceViewController.xib; sourceTree = "<group>"; };
+		722456C420E0CB2A0096D1A2 /* WisdomSiteSuiNing.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WisdomSiteSuiNing.entitlements; sourceTree = "<group>"; };
+		722456C820E0D7880096D1A2 /* QualityListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QualityListViewController.h; sourceTree = "<group>"; };
+		722456C920E0D7880096D1A2 /* QualityListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QualityListViewController.m; sourceTree = "<group>"; };
+		722456CA20E0D7880096D1A2 /* QualityListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QualityListViewController.xib; sourceTree = "<group>"; };
+		722456CD20E0E1D30096D1A2 /* add_img@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add_img@3x.png"; sourceTree = "<group>"; };
+		722456D020E0E3B50096D1A2 /* QualityListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityListCell.h; sourceTree = "<group>"; };
+		722456D120E0E3B50096D1A2 /* QualityListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualityListCell.m; sourceTree = "<group>"; };
+		722456D220E0E3B50096D1A2 /* QualityListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QualityListCell.xib; sourceTree = "<group>"; };
+		722456D620E0E4290096D1A2 /* aid_userModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aid_userModel.h; sourceTree = "<group>"; };
+		722456D720E0E4290096D1A2 /* aid_userModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = aid_userModel.m; sourceTree = "<group>"; };
+		722456D820E0E4290096D1A2 /* fid_user.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fid_user.h; sourceTree = "<group>"; };
+		722456D920E0E4290096D1A2 /* fid_user.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fid_user.m; sourceTree = "<group>"; };
+		722456DA20E0E4290096D1A2 /* QualityListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityListModel.h; sourceTree = "<group>"; };
+		722456DB20E0E4290096D1A2 /* QualityListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualityListModel.m; sourceTree = "<group>"; };
+		722456DC20E0E4290096D1A2 /* zid_userModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zid_userModel.h; sourceTree = "<group>"; };
+		722456DD20E0E4290096D1A2 /* zid_userModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zid_userModel.m; sourceTree = "<group>"; };
+		722456E220E0F2BB0096D1A2 /* left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left.png; sourceTree = "<group>"; };
+		722456E420E0F2D90096D1A2 /* bottom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bottom.png; sourceTree = "<group>"; };
 		726A539E20DC9456005C205F /* AddrDetailTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddrDetailTableViewCell.xib; sourceTree = "<group>"; };
 		726A539F20DC9456005C205F /* AddrDetailTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddrDetailTableViewCell.h; sourceTree = "<group>"; };
 		726A53A020DC9456005C205F /* AddrDetailTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddrDetailTableViewCell.m; sourceTree = "<group>"; };
@@ -375,6 +411,9 @@
 		721A4FF620DB6D7200194970 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				722456E420E0F2D90096D1A2 /* bottom.png */,
+				722456E220E0F2BB0096D1A2 /* left.png */,
+				722456CD20E0E1D30096D1A2 /* add_img@3x.png */,
 				721A501420DB961E00194970 /* home_notification@2x.png */,
 				721A500D20DB906500194970 /* progressBg.jpg */,
 				721A4FF720DB6DBF00194970 /* home_banner.png */,
@@ -405,6 +444,76 @@
 				728B614020DA325C0047B7DE /* Controller */,
 			);
 			name = MainList;
+			sourceTree = "<group>";
+		};
+		722456B420E07FC00096D1A2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				722456B520E07FC00096D1A2 /* default.jpg */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		722456BE20E0C27F0096D1A2 /* introduce */ = {
+			isa = PBXGroup;
+			children = (
+				722456BF20E0C27F0096D1A2 /* IntroduceViewController.h */,
+				722456C020E0C27F0096D1A2 /* IntroduceViewController.m */,
+				722456C120E0C27F0096D1A2 /* IntroduceViewController.xib */,
+			);
+			path = introduce;
+			sourceTree = "<group>";
+		};
+		722456C520E0D70C0096D1A2 /* Quality Management */ = {
+			isa = PBXGroup;
+			children = (
+				722456D520E0E4290096D1A2 /* Model */,
+				722456CF20E0E3B50096D1A2 /* View */,
+				722456C720E0D7460096D1A2 /* Controller */,
+			);
+			name = "Quality Management";
+			sourceTree = "<group>";
+		};
+		722456C620E0D72C0096D1A2 /* Safe Management */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Safe Management";
+			sourceTree = "<group>";
+		};
+		722456C720E0D7460096D1A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				722456C820E0D7880096D1A2 /* QualityListViewController.h */,
+				722456C920E0D7880096D1A2 /* QualityListViewController.m */,
+				722456CA20E0D7880096D1A2 /* QualityListViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		722456CF20E0E3B50096D1A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				722456D020E0E3B50096D1A2 /* QualityListCell.h */,
+				722456D120E0E3B50096D1A2 /* QualityListCell.m */,
+				722456D220E0E3B50096D1A2 /* QualityListCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		722456D520E0E4290096D1A2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				722456D620E0E4290096D1A2 /* aid_userModel.h */,
+				722456D720E0E4290096D1A2 /* aid_userModel.m */,
+				722456D820E0E4290096D1A2 /* fid_user.h */,
+				722456D920E0E4290096D1A2 /* fid_user.m */,
+				722456DA20E0E4290096D1A2 /* QualityListModel.h */,
+				722456DB20E0E4290096D1A2 /* QualityListModel.m */,
+				722456DC20E0E4290096D1A2 /* zid_userModel.h */,
+				722456DD20E0E4290096D1A2 /* zid_userModel.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		726A539D20DC9423005C205F /* View */ = {
@@ -500,6 +609,7 @@
 		728B607B20D9F79C0047B7DE /* WisdomSiteSuiNing */ = {
 			isa = PBXGroup;
 			children = (
+				722456C420E0CB2A0096D1A2 /* WisdomSiteSuiNing.entitlements */,
 				728B607C20D9F79C0047B7DE /* AppDelegate.h */,
 				728B607D20D9F79C0047B7DE /* AppDelegate.m */,
 				728B613B20DA32010047B7DE /* Main */,
@@ -637,6 +747,8 @@
 		728B613B20DA32010047B7DE /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				722456C620E0D72C0096D1A2 /* Safe Management */,
+				722456C520E0D70C0096D1A2 /* Quality Management */,
 				721A502C20DBA0C200194970 /* MainList */,
 			);
 			path = Main;
@@ -661,6 +773,7 @@
 		728B613E20DA322D0047B7DE /* Address */ = {
 			isa = PBXGroup;
 			children = (
+				722456B420E07FC00096D1A2 /* Resource */,
 				726A539D20DC9423005C205F /* View */,
 				728B614320DA32A60047B7DE /* Controller */,
 			);
@@ -670,6 +783,7 @@
 		728B613F20DA323F0047B7DE /* My */ = {
 			isa = PBXGroup;
 			children = (
+				722456BE20E0C27F0096D1A2 /* introduce */,
 				726A53BC20DCD29F005C205F /* MyProfile */,
 				726A53BB20DCD28A005C205F /* MyList */,
 			);
@@ -841,6 +955,11 @@
 				TargetAttributes = {
 					728B607820D9F79C0047B7DE = {
 						CreatedOnToolsVersion = 9.3.1;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					728B609020D9F7A00047B7DE = {
 						CreatedOnToolsVersion = 9.3.1;
@@ -879,17 +998,21 @@
 			files = (
 				728B616920DA38CF0047B7DE /* schedule_normal@2x.png in Resources */,
 				728B617B20DA4CC70047B7DE /* logo.png in Resources */,
+				722456E520E0F2D90096D1A2 /* bottom.png in Resources */,
 				721A4FF520DB49A000194970 /* MainBannerTableViewCell.xib in Resources */,
 				728B612B20DA31730047B7DE /* UndetailViewController.xib in Resources */,
 				726A53CB20DCDC24005C205F /* HeadTableViewCell.xib in Resources */,
+				722456C320E0C27F0096D1A2 /* IntroduceViewController.xib in Resources */,
 				726A53B720DCC9E1005C205F /* my_sys_introduce@2x.png in Resources */,
 				728B60B620DA1CFF0047B7DE /* TabBarViewController.xib in Resources */,
 				728B60F420DA1DE00047B7DE /* yzsq_icon_choose2@2x.png in Resources */,
 				721A4FEF20DB3CF200194970 /* LoginViewController.xib in Resources */,
+				722456B620E07FC00096D1A2 /* default.jpg in Resources */,
 				721A4FFC20DB6F3800194970 /* banner_1.jpg in Resources */,
 				721A502520DB9FD200194970 /* work_audit_inner.png in Resources */,
 				728B616C20DA38CF0047B7DE /* self_press@2x.png in Resources */,
 				2F04F35020DFE07F004B44AA /* AddressHeaderFooterView.xib in Resources */,
+				722456CE20E0E1D30096D1A2 /* add_img@3x.png in Resources */,
 				721A500E20DB906500194970 /* progressBg.jpg in Resources */,
 				721A501220DB95EC00194970 /* ThreeTableViewCell.xib in Resources */,
 				726A53CD20DCDC24005C205F /* InformationTableViewCell.xib in Resources */,
@@ -933,6 +1056,7 @@
 				721A502B20DBA00E00194970 /* money_bag@2x.jpg in Resources */,
 				728B613520DA31B30047B7DE /* AddressViewController.xib in Resources */,
 				721A502920DB9FF700194970 /* problem.png in Resources */,
+				722456CC20E0D7880096D1A2 /* QualityListViewController.xib in Resources */,
 				728B616520DA38CF0047B7DE /* address_press@2x.png in Resources */,
 				721A502720DB9FE200194970 /* work_progress_check.png in Resources */,
 				728B617320DA41B40047B7DE /* common_btn_topback@2x.png in Resources */,
@@ -944,8 +1068,10 @@
 				726A53AF20DCC97E005C205F /* arrow@2x.png in Resources */,
 				721A4FF820DB6DBF00194970 /* home_banner.png in Resources */,
 				726A53B120DCC9A4005C205F /* my_photo.png in Resources */,
+				722456E320E0F2BB0096D1A2 /* left.png in Resources */,
 				728B616620DA38CF0047B7DE /* address_normal@2x.png in Resources */,
 				728B60F520DA1DE00047B7DE /* yzsq_icon_choose2@3x.png in Resources */,
+				722456D420E0E3B50096D1A2 /* QualityListCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1023,19 +1149,23 @@
 				728B611320DA1E750047B7DE /* MBProgressHUD+YJ.m in Sources */,
 				728B611820DA1E750047B7DE /* UIView+CustomFoundation.m in Sources */,
 				728B60B520DA1CFF0047B7DE /* TabBarViewController.m in Sources */,
+				722456E020E0E4290096D1A2 /* QualityListModel.m in Sources */,
 				726A53C120DCD416005C205F /* MyProfileViewController.m in Sources */,
 				728B60E320DA1DE00047B7DE /* NSData+MD5Digest.m in Sources */,
 				728B612A20DA31730047B7DE /* UndetailViewController.m in Sources */,
+				722456E120E0E4290096D1A2 /* zid_userModel.m in Sources */,
 				728B611120DA1E750047B7DE /* NSArray+CustomFoundation.m in Sources */,
 				728B60EB20DA1DE00047B7DE /* QBImagePickerFooterView.m in Sources */,
 				728B60E920DA1DE00047B7DE /* QBImagePickerAssetView.m in Sources */,
 				726A53A220DC9456005C205F /* AddrDetailTableViewCell.m in Sources */,
 				728B60E720DA1DE00047B7DE /* QBAssetCollectionViewController.m in Sources */,
+				722456DF20E0E4290096D1A2 /* fid_user.m in Sources */,
 				728B612020DA30660047B7DE /* UserAuthModel.m in Sources */,
 				728B60B120DA1BB60047B7DE /* BaseViewController.m in Sources */,
 				726A53CC20DCDC24005C205F /* InformationTableViewCell.m in Sources */,
 				728B60E620DA1DE00047B7DE /* PEResizeControl.m in Sources */,
 				728B611420DA1E750047B7DE /* FMUImage.m in Sources */,
+				722456D320E0E3B50096D1A2 /* QualityListCell.m in Sources */,
 				728B611020DA1E750047B7DE /* NetWorkTool.m in Sources */,
 				728B612120DA30660047B7DE /* UserModel.m in Sources */,
 				721A500B20DB8EC800194970 /* ProgressTableViewCell.m in Sources */,
@@ -1049,8 +1179,10 @@
 				726A53CA20DCDC24005C205F /* HeadTableViewCell.m in Sources */,
 				726A53AD20DCC5B3005C205F /* CategoryTableViewCell.m in Sources */,
 				728B608C20D9F7A00047B7DE /* main.m in Sources */,
+				722456CB20E0D7880096D1A2 /* QualityListViewController.m in Sources */,
 				728B60EC20DA1DE00047B7DE /* QBImagePickerGroupCell.m in Sources */,
 				721A4FEE20DB3CF200194970 /* LoginViewController.m in Sources */,
+				722456DE20E0E4290096D1A2 /* aid_userModel.m in Sources */,
 				728B613420DA31B30047B7DE /* AddressViewController.m in Sources */,
 				728B610F20DA1E750047B7DE /* NSString+Phone.m in Sources */,
 				728B607E20D9F79C0047B7DE /* AppDelegate.m in Sources */,
@@ -1059,6 +1191,7 @@
 				728B60EA20DA1DE00047B7DE /* QBImagePickerController.m in Sources */,
 				721A501320DB95EC00194970 /* ThreeTableViewCell.m in Sources */,
 				726A53A720DCBF39005C205F /* PersonTableViewCell.m in Sources */,
+				722456C220E0C27F0096D1A2 /* IntroduceViewController.m in Sources */,
 				728B60E520DA1DE00047B7DE /* PECropView.m in Sources */,
 				728B60E220DA1DE00047B7DE /* EditPictureViewController.m in Sources */,
 				721A4FF420DB49A000194970 /* MainBannerTableViewCell.m in Sources */,
@@ -1233,6 +1366,7 @@
 			baseConfigurationReference = D4BB140B4EB74D20C9303325 /* Pods-WisdomSiteSuiNing.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WisdomSiteSuiNing/WisdomSiteSuiNing.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3UHNVFMNV;
@@ -1256,6 +1390,7 @@
 			baseConfigurationReference = F0AC8ABF40DEA5A61FB0A6EF /* Pods-WisdomSiteSuiNing.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WisdomSiteSuiNing/WisdomSiteSuiNing.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3UHNVFMNV;

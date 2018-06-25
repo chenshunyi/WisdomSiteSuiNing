@@ -11,6 +11,7 @@
 #import "MainBannerTableViewCell.h"
 #import "ProgressTableViewCell.h"
 #import "ThreeTableViewCell.h"
+#import "QualityListViewController.h"
 
 @interface MainViewController ()<UITableViewDelegate,UITableViewDataSource,ProgressTableViewCellDelegate,ThreeTableViewCellDelegate>
 
@@ -110,7 +111,9 @@
 - (void)threeButtonAction:(NSInteger)tag{
     switch (tag) {
         case 0:{
-            
+            QualityListViewController*qualityVC=[[QualityListViewController alloc]init];
+            qualityVC.hidesBottomBarWhenPushed=YES;
+            [self.navigationController pushViewController:qualityVC  animated:YES];
         }
             break;
         case 10:{

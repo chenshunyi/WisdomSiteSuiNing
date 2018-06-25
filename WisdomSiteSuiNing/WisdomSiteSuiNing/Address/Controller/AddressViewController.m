@@ -11,13 +11,14 @@
 #import "AddrDetailTableViewCell.h"
 #import "AddressHeaderFooterView.h"
 
-@interface AddressViewController ()<UITableViewDataSource,UITableViewDelegate>{
+@interface AddressViewController ()<UITableViewDataSource,UITableViewDelegate,UISearchBarDelegate>{
     NSArray     *_array;
     NSDictionary*_data;
     BOOL _isOpen[50];
     
 }
 @property(nonatomic,strong) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UISearchBar *searchBar;
 @property(nonatomic,strong) NSArray*nameArr;//项目经理等等
 
 
@@ -34,8 +35,11 @@
     self.tableView.dataSource=self;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
+    self.searchBar.delegate = self;
+    self.searchBar.placeholder = @"搜索";
     
-    self.nameArr=@[@{@"title":@"技术部",@"datas":@[@{@"name":@"张三",@"phone":@"1234566"},@{@"name":@"范冰冰",@"phone":@"1234566"},@{@"name":@"李晨",@"phone":@"1234566"}]},
+    
+    self.nameArr=@[@{@"title":@"技术部",@"datas":@[@{@"name":@"张三",@"phone":@"1234566"},@{@"name":@"范冰冰",@"phone":@"1234566"},@{@"name":@"李晨",@"phone":@"1234566"},@{@"name":@"赵丽颖",@"phone":@"1234576"}]},
                     @{@"title":@"项目经理",@"datas":@[@{@"name":@"张四",@"phone":@"1234566"},@{@"name":@"范冰冰",@"phone":@"1234566"},@{@"name":@"李晨",@"phone":@"1234566"}]},
                     @{@"title":@"后期部",@"datas":@[@{@"name":@"张五",@"phone":@"1234566"},@{@"name":@"范冰冰",@"phone":@"1234566"},@{@"name":@"李晨",@"phone":@"1234566"}]}
                     ];
@@ -65,19 +69,25 @@
         cell = [[NSBundle mainBundle]loadNibNamed:@"AddrDetailTableViewCell" owner:nil options:nil].firstObject;
     }
     cell.selectionStyle=UITableViewCellSelectionStyleNone;
-    NSDictionary*data=[self.nameArr objectAtSafeIndex:indexPath.row];
-    [cell reloadCellData:data withHeadImageUrl:nil];
+    NSDictionary*data=[self.nameArr objectAtSafeIndex:indexPath.section];
+    NSArray*dataArr=[data objectForKey:@"datas"];
+
+    NSDictionary*dic=[dataArr objectAtSafeIndex:indexPath.row];
+    NSString*nameStr=[dic objectForKey:@"name"];
+    NSString*phoneStr=[dic objectForKey:@"phone"];
+    [cell reloadCellWithName:nameStr WithPhone:phoneStr withHeadImageUrl:nil];
 
     return cell;
     
-//    UITableViewCell*cell=[tableView dequeueReusableCellWithIdentifier:@"cell"];
-//    if (!cell) {
-//        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
-//    }
-//    cell.selectionStyle=UITableViewCellSelectionStyleNone;
-//    cell.textLabel.text=[NSString stringWithFormat:@"我是第%ld个页面的cell",tableView.tag+1];
-//    return cell;
-    
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSDictionary*data=[self.nameArr objectAtSafeIndex:indexPath.section];
+    NSArray*dataArr=[data objectForKey:@"datas"];
+    NSDictionary*dic=[dataArr objectAtSafeIndex:indexPath.row];
+     NSString*phoneStr=[dic objectForKey:@"phone"];
+    if (![NSString telePhoneCallWithChecking:phoneStr]) {
+        NSLog(@"打不了");
+    }
 }
 
 #pragma mark UITableViewDelegate回调方法
@@ -100,8 +110,6 @@
     
     NSDictionary *data = [_nameArr objectAtSafeIndex:section];
     [view reloadHeaderFooterView:data withUnfolder:_isOpen[section] withSection:section];
-    
-
     return view;
     
 }
@@ -111,13 +119,30 @@
 }
 //button的响应点击事件
 - (void) buttonClicked:(UIButton *) sender {
-    //改变模型数据里面的展开收起状态
-//
-//
-//    YYMGroup *group2 = dataArray[sender.tag - 200];
-//    group2.folded = !group2.isFolded;
-//    [myTableView reloadData];
+
 }
+#pragma mark - UISearchBarDelegate
+//已经开始进行编辑
+-(void)searchBarTextDidBeginEditing:(UISearchBar *)searchBar{
+    self.searchBar.showsCancelButton=YES;
+}
+-(void)searchBarTextDidEndEditing:(UISearchBar *)searchBar{
+    self.searchBar.showsCancelButton=NO;
+}
+//当搜索框中的内容发生改变时会自动进行搜索
+-(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    
+}
+//取消按钮的点击事件
+- (void)searchBarCancelButtonClicked:(UISearchBar *)searchBar{
+    [self.view endEditing:YES];
+}
+//在键盘中的搜索按钮的点击事件
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
+    [self.view endEditing:YES];
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
